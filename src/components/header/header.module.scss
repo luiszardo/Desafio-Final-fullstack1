@@ -14,6 +14,7 @@
 
   h1 {
     font-size: 25px;
+    color: #ffffff;
   }
 }
 
@@ -47,7 +48,7 @@
   input {
     background-color: transparent;
     border: none;
-    width: 60%;
+    width: 66%;
 
     &::placeholder {
       color: #fff;
@@ -59,5 +60,41 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 780px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+
+    h1 {
+      font-size: 23px;
+    }
+  }
+
+  .logoHeader {
+    width: 80%;
+
+    h1 {
+      font-size: 23px;
+    }
+
+    img {
+      height: 8vh;
+    }
+  }
+
+  .navHeader {
+    width: 100%;
+  }
+
+  .barraDeBusca {
+    display: none;
+  }
+
+  .link {
+    font-size: 25px;
   }
 }
